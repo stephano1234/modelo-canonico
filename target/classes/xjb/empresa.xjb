@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<jaxb:bindings
+	xmlns:jaxb="http://java.sun.com/xml/ns/jaxb" 
+	xmlns:xs="http://www.w3.org/2001/XMLSchema"
+	xmlns:xjc="http://java.sun.com/xml/ns/jaxb/xjc"
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xmlns:annox="http://annox.dev.java.net"
+	xsi:schemaLocation="http://java.sun.com/xml/ns/jaxb http://java.sun.com/xml/ns/jaxb/bindingschema_2_0.xsd"
+	jaxb:extensionBindingPrefixes="xjc annox"
+	version="2.1">
+
+	<jaxb:bindings schemaLocation="../xsd/EmpresaDomain.xsd" node="/xs:schema">
+	
+		<jaxb:bindings node="xs:complexType[@name='EmpresaResource']">
+			<annox:annotateClass>@javax.xml.bind.annotation.XmlRootElement(name="EmpresaResource")</annox:annotateClass>
+		</jaxb:bindings>
+
+		<jaxb:bindings node="xs:complexType[@name='ResponsavelResource']">
+			<annox:annotateClass>@javax.xml.bind.annotation.XmlRootElement(name="ResponsavelResource")</annox:annotateClass>
+		</jaxb:bindings>
+
+		<jaxb:bindings node="xs:complexType[@name='EnderecoResource']">
+			<annox:annotateClass>@javax.xml.bind.annotation.XmlRootElement(name="EnderecoResource")</annox:annotateClass>
+		</jaxb:bindings>
+
+		<jaxb:bindings node="xs:complexType[@name='TelefoneFixoResource']">
+			<annox:annotateClass>@javax.xml.bind.annotation.XmlRootElement(name="TelefoneFixoResource")</annox:annotateClass>
+		</jaxb:bindings>
+
+		<jaxb:bindings node="xs:complexType[@name='EmailResource']">
+			<annox:annotateClass>@javax.xml.bind.annotation.XmlRootElement(name="EmailResource")</annox:annotateClass>
+		</jaxb:bindings>
+
+		<jaxb:bindings node="xs:complexType[@name='CelularResource']">
+			<annox:annotateClass>@javax.xml.bind.annotation.XmlRootElement(name="CelularResource")</annox:annotateClass>
+		</jaxb:bindings>
+
+		<jaxb:bindings node="xs:complexType[@name='ContaBancariaResource']">
+			<annox:annotateClass>@javax.xml.bind.annotation.XmlRootElement(name="ContaResource")</annox:annotateClass>
+		</jaxb:bindings>
+		
+	</jaxb:bindings>
+
+</jaxb:bindings>

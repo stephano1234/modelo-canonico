@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<bindings version="2.1" xmlns="http://java.sun.com/xml/ns/jaxb">
+  <!--
+
+Este arquivo foi gerado pela Arquitetura JavaTM para Implementação de Referência (JAXB) de Bind XML, v2.2.11 
+Consulte <a href="http://java.sun.com/xml/jaxb">http://java.sun.com/xml/jaxb</a> 
+Todas as modificações neste arquivo serão perdidas após a recompilação do esquema de origem. 
+Gerado em: 2020.04.26 às 11:59:49 AM BRT 
+
+  -->
+  <bindings scd="x-schema::tns" xmlns:tns="http://www.contmatic.com.br/dto/empresa/v1">
+    <schemaBindings map="false">
+      <package name="br.com.contmatic.dto.empresa.v1"/>
+    </schemaBindings>
+    <bindings scd="~tns:EmpresaResource">
+      <class ref="br.com.contmatic.dto.empresa.v1.EmpresaResource"/>
+    </bindings>
+    <bindings scd="~tns:ResponsavelResource">
+      <class ref="br.com.contmatic.dto.empresa.v1.ResponsavelResource"/>
+    </bindings>
+    <bindings scd="~tns:EnderecoResource">
+      <class ref="br.com.contmatic.dto.empresa.v1.EnderecoResource"/>
+    </bindings>
+    <bindings scd="~tns:TelefoneFixoResource">
+      <class ref="br.com.contmatic.dto.empresa.v1.TelefoneFixoResource"/>
+    </bindings>
+    <bindings scd="~tns:EmailResource">
+      <class ref="br.com.contmatic.dto.empresa.v1.EmailResource"/>
+    </bindings>
+    <bindings scd="~tns:CelularResource">
+      <class ref="br.com.contmatic.dto.empresa.v1.CelularResource"/>
+    </bindings>
+    <bindings scd="~tns:ContaBancariaResource">
+      <class ref="br.com.contmatic.dto.empresa.v1.ContaBancariaResource"/>
+    </bindings>
+  </bindings>
+</bindings>
+

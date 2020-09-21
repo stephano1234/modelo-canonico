@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xs:schema xmlns:xs="http://www.w3.org/2001/XMLSchema"
+	targetNamespace="http://www.contmatic.com.br/dto/empresa/v1"
+	xmlns="http://www.contmatic.com.br/dto/empresa/v1">
+	<xs:complexType name="EmpresaResource">
+		<xs:sequence>
+			<xs:element name="cnpj" type="xs:string" minOccurs="0" />
+			<xs:element name="razaoSocial" type="xs:string"
+				minOccurs="0" />
+			<xs:element name="dataAbertura" type="xs:dateTime"
+				minOccurs="0" />
+			<xs:element name="responsaveis" type="ResponsavelResource"
+				maxOccurs="unbounded" />
+			<xs:element name="enderecos" type="EnderecoResource"
+				maxOccurs="unbounded" />
+			<xs:element name="telefonesFixos"
+				type="TelefoneFixoResource" maxOccurs="unbounded" />
+			<xs:element name="emails" type="EmailResource"
+				maxOccurs="unbounded" />
+			<xs:element name="celulares" type="CelularResource"
+				maxOccurs="unbounded" />
+			<xs:element name="contasBancarias"
+				type="ContaBancariaResource" maxOccurs="unbounded" />
+			<xs:element name="tipoEmpresa" type="xs:string"
+				minOccurs="0" />
+			<xs:element name="tipoPorteEmpresa" type="xs:string"
+				minOccurs="0" />
+		</xs:sequence>
+	</xs:complexType>
+	<xs:complexType name="ResponsavelResource">
+		<xs:sequence>
+			<xs:element name="cpf" type="xs:string" minOccurs="0" />
+			<xs:element name="nome" type="xs:string" minOccurs="0" />
+			<xs:element name="dataNascimento" type="xs:dateTime"
+				minOccurs="0" />
+			<xs:element name="tipoGrauInstrucao" type="xs:string"
+				minOccurs="0" />
+			<xs:element name="tipoEstadoCivil" type="xs:string"
+				minOccurs="0" />
+			<xs:element name="tipoSexo" type="xs:string" minOccurs="0" />
+		</xs:sequence>
+	</xs:complexType>
+	<xs:complexType name="EnderecoResource">
+		<xs:sequence>
+			<xs:element name="cep" type="xs:string" minOccurs="0" />
+			<xs:element name="numero" type="xs:string" minOccurs="0" />
+			<xs:element name="complemento" type="xs:string"
+				minOccurs="0" />
+			<xs:element name="logradouro" type="xs:string"
+				minOccurs="0" />
+			<xs:element name="bairro" type="xs:string" minOccurs="0" />
+			<xs:element name="cidade" type="xs:string" minOccurs="0" />
+			<xs:element name="tipoUf" type="xs:string" minOccurs="0" />
+		</xs:sequence>
+	</xs:complexType>
+	<xs:complexType name="TelefoneFixoResource">
+		<xs:sequence>
+			<xs:element name="numero" type="xs:string" minOccurs="0" />
+		</xs:sequence>
+	</xs:complexType>
+	<xs:complexType name="EmailResource">
+		<xs:sequence>
+			<xs:element name="endereco" type="xs:string" minOccurs="0" />
+		</xs:sequence>
+	</xs:complexType>
+	<xs:complexType name="CelularResource">
+		<xs:sequence>
+			<xs:element name="numero" type="xs:string" minOccurs="0" />
+		</xs:sequence>
+	</xs:complexType>
+	<xs:complexType name="ContaBancariaResource">
+		<xs:sequence>
+			<xs:element name="numero" type="xs:string" minOccurs="0" />
+			<xs:element name="numeroAgencia" type="xs:string"
+				minOccurs="0" />
+			<xs:element name="codigoBanco" type="xs:string"
+				minOccurs="0" />
+			<xs:element name="tipoContaBancaria" type="xs:string"
+				minOccurs="0" />
+		</xs:sequence>
+	</xs:complexType>
+</xs:schema>
